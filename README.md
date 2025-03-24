@@ -1,3 +1,144 @@
+#Frontend 
+
+if you want to run the frontend in your machine 
+
+git clone repo-url
+cd frontend 
+npm install 
+npm start 
+
+
+#Backend 
+git clone repo-url
+example=> git clone https://github.com/DaveedGangi/syncthreadBackend.git
+create a .env file instead of .gitignore
+pase this lines 
+JWT_SECRET=your_secret_key
+PORT=3000
+
+npm install 
+node index.js
+
+
+#Packages used Frontend 
+
+npm install create-react-app
+npm install js-cookie 
+npm install react-router-dom@5.2.0
+npm install react-leaflet leaflet
+
+#Packages used for backend
+npm install express sqlite sqlite3 bcrypt jsonwebtoken cors
+
+##additional things done 
+i have integrated backend on render platform 
+and used those apis in  fronted application 
+added features like authenction and authorization
+once the user is authenticated he need to navigate to the dashboard 
+sending the jsonwebtoken to the backend server for authorization
+once the user is authorized he can access the dashboard and map-view 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
