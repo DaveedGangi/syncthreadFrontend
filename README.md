@@ -2,7 +2,7 @@
 
 if you want to run the frontend in your machine 
 
-git clone repo-url
+git clone https://github.com/DaveedGangi/syncthreadFrontend.git
 cd frontend 
 npm install 
 npm start 

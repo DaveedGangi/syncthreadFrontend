@@ -31,6 +31,7 @@ class Map extends Component {
        const{match}=this.props
        const {lat,lon} = match.params;
        this.fetchData();
+       
        if(lat && lon){
            this.setState({latitude:parseFloat(lat),longitude:parseFloat(lon),loading:false})
        }
@@ -38,6 +39,7 @@ class Map extends Component {
         if(navigator.geolocation){
            navigator.geolocation.getCurrentPosition(position => {
              this.setState({latitude: position.coords.latitude,longitude: position.coords.longitude,loading:false})
+           
            }, error => {
              this.setState({error: error.message, loading: false})
            });
@@ -95,6 +97,9 @@ class Map extends Component {
         Cookies.remove("jwtTokenSyncthread");
         this.props.history.push("/");
       }
+
+
+    
   render() {
         const{latitude,longitude,error,loading,message,redirect}=this.state;
         if(redirect){

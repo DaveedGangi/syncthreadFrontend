@@ -44,11 +44,16 @@ class Login extends Component {
     const data= await fetching.json();
     console.log(data);
     if(fetching.ok){
+      if(register){
+        alert("Registration Successful. Please log in.");
+        this.setState({ register: false, errorMessage: "", name: "", password: "" });
+      }
+      else{
         alert("Login Successful");
         this.props.history.replace("/dashboard");
         this.setState({errorMessage:""});
-        console.log(data.token);
         Cookies.set('jwtTokenSyncthread', data.token);
+      }
     }
     else{
        

@@ -4,10 +4,7 @@
     align-items: center;
     background-color: #333;
     color: white;
-    padding: 10px;
-    margin:0px;
-    width:100%;
-    box-sizing: border-box;
+    padding:10px;
 
 }
 .button-logout{
@@ -25,15 +22,3 @@
     height: 100vh;
     
 }
-
-/* Ensure the map takes the full screen */
-
-.map-container {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  
